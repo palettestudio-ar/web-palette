@@ -1,0 +1,84 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navLogoImg {
+  height: 42px;
+  width: auto;
+}
+
+.navLogoText {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--negro);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.navLinks a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--negro);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: var(--fucsia);
+}
+
+.navCta {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+  background: var(--fucsia);
+  color: #fff !important;
+  padding: 10px 24px;
+  transition: background 0.2s !important;
+}
+
+.navCta:hover {
+  background: #cc0066;
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 14px 20px;
+  }
+
+  .navLogoText {
+    display: none;
+  }
+
+  .navLinks a:not(.navCta) {
+    display: none;
+  }
+}

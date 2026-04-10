@@ -1,0 +1,81 @@
+.sec {
+  padding: 100px 24px;
+}
+
+.wrap {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.secLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.secTitle {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.secBar {
+  width: 44px;
+  height: 2px;
+  background: var(--fucsia);
+  margin-bottom: 24px;
+}
+
+.secDesc {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.9;
+}
+
+.btnF {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--fucsia);
+  color: #fff;
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.btnF:hover {
+  background: #cc0066;
+  transform: translateY(-2px);
+}
+
+.btnO {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--negro);
+  border: 1.5px solid var(--negro);
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btnO:hover {
+  background: var(--negro);
+  color: #fff;
+  transform: translateY(-2px);
+}

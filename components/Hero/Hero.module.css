@@ -1,0 +1,102 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.hero {
+  min-height: 100vh;
+  background: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 24px 80px;
+}
+
+.circle1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1.5px solid var(--fucsia);
+  opacity: 0.07;
+  top: -150px;
+  right: -150px;
+  pointer-events: none;
+}
+
+.circle2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1.5px solid var(--fucsia);
+  opacity: 0.05;
+  bottom: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.heroLogo {
+  height: 100px;
+  width: auto;
+  margin: 0 auto 32px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--negro);
+  margin-bottom: 20px;
+}
+
+.title em {
+  font-style: italic;
+  font-weight: 400;
+  color: #bbb;
+}
+
+.script {
+  font-family: var(--font-great-vibes), 'Great Vibes', cursive;
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--fucsia);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.sub {
+  font-size: 15px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.85;
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+
+.btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

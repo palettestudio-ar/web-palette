@@ -1,0 +1,84 @@
+/* =============================================
+   RESET
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================
+   CSS VARIABLES
+   ============================================= */
+:root {
+  --fucsia: #FF0080;
+  --negro: #111111;
+  --blanco: #FFFFFF;
+  --gris: #F7F5F7;
+}
+
+/* =============================================
+   BASE
+   ============================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+  background: var(--blanco);
+  color: var(--negro);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+/* =============================================
+   CUSTOM SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fucsia);
+}
+
+/* =============================================
+   SCROLL REVEAL ANIMATION
+   IMPORTANT: These classes must stay global —
+   the useReveal hook adds/removes them via
+   element.classList.add('visible')
+   ============================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.d1 {
+  transition-delay: 0.1s;
+}
+
+.reveal.d2 {
+  transition-delay: 0.2s;
+}
+
+.reveal.d3 {
+  transition-delay: 0.3s;
+}
