@@ -2,21 +2,22 @@ import styles from "./Contact.module.css";
 import shared from "@/styles/shared.module.css";
 import { WHATSAPP_URL, INSTAGRAM_URL, EMAIL } from "@/lib/constants";
 
-export default function Contact() {
+export default function Contact({ fullPage }: { fullPage?: boolean } = {}) {
   return (
-    <section className={`${styles.contact} ${shared.sec}`} id="contacto">
+    <section className={`${styles.contact} ${shared.sec} ${fullPage ? styles.fullPage : ""}`} id="contacto">
       <div className={shared.wrap}>
         <div className="reveal">
-          <p className={styles.script}>¿Lista para brillar?</p>
+          <p className={styles.script}>Tu próximo gran paso empieza acá</p>
 
           <h2 className={`${shared.secTitle} ${styles.title}`}>
             Hagamos que tu marca{" "}
-            <em>deje de susurrar.</em>
+            <em>sea inolvidable.</em>
           </h2>
 
           <p className={`${shared.secDesc} ${styles.sub}`}>
-            Estamos listas para escucharte. Contanos tu proyecto y empecemos a
-            construir la identidad visual que tu marca merece.
+            Ya sea que tengas una idea clara o estés arrancando desde cero,
+            estamos para escucharte. Contanos tu proyecto y construyamos juntos
+            la identidad visual que tu marca se merece.
           </p>
 
           <div className={styles.btns}>

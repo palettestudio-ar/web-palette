@@ -1,48 +1,37 @@
+import Link from "next/link";
 import styles from "./Hero.module.css";
-import shared from "@/styles/shared.module.css";
-import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className={styles.hero} id="inicio">
-      <div className={styles.circle1} />
-      <div className={styles.circle2} />
+    <section className={styles.hero}>
+      <div className={styles.bg} aria-hidden="true" />
 
       <div className={styles.content}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo/logo.svg"
-          alt="Palette Studio"
-          className={styles.heroLogo}
-        />
+        <img src="/logo/logo.svg" alt="Palette Studio" className={styles.logo} />
 
-        <p className={styles.eyebrow}>Identidad visual &amp; branding</p>
+        <p className={styles.eyebrow}>Estudio de Identidad Visual &amp; Branding</p>
 
         <h1 className={styles.title}>
-          Tu marca,{" "}
+          Tu marca,<br />
           <em>tu esencia.</em>
         </h1>
 
-        <p className={styles.script}>Diseñamos identidades que brillan</p>
+        <p className={styles.script}>Donde la creatividad se convierte en identidad</p>
 
-        <p className={styles.sub}>
-          Transformamos la esencia de emprendedores y empresas familiares en
-          identidades visuales que el mundo no puede ignorar.
-        </p>
-
-        <div className={styles.btns}>
-          <a href="#servicios" className={shared.btnF}>
+        <div className={styles.actions}>
+          <Link href="/servicios" className={styles.btnPrimary}>
             Ver servicios
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={shared.btnO}
-          >
-            Escribinos
-          </a>
+          </Link>
+          <Link href="/contacto" className={styles.btnSecondary}>
+            Contactanos
+          </Link>
         </div>
+      </div>
+
+      <div className={styles.scrollHint} aria-hidden="true">
+        <span className={styles.scrollLine} />
+        <span className={styles.scrollText}>Scroll</span>
       </div>
     </section>
   );

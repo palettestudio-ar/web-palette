@@ -1,7 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
-import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import FloatingButtons from "@/components/FloatingButtons/FloatingButtons";
 
 const playfair = Playfair_Display({
@@ -46,7 +47,9 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable} ${greatVibes.variable}`}
     >
       <body>
+        <Navbar />
         {children}
+        <Footer />
         <FloatingButtons />
       </body>
     </html>

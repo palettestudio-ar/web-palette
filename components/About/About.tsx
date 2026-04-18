@@ -2,10 +2,10 @@ import styles from "./About.module.css";
 import shared from "@/styles/shared.module.css";
 
 const stats = [
-  { num: "100%", label: "Diseño personalizado" },
-  { num: "∞", label: "Creatividad sin límites" },
-  { num: "3", label: "Servicios estrella" },
-  { num: "1", label: "Estética única" },
+  { num: "100%", label: "Proyectos personalizados" },
+  { num: "+50", label: "Marcas transformadas" },
+  { num: "3", label: "Disciplinas de diseño" },
+  { num: "∞", label: "Ideas sin límite" },
 ];
 
 export default function About() {
@@ -17,18 +17,19 @@ export default function About() {
           <div className="reveal-left">
             <span className={shared.secLabel}>Quiénes somos</span>
             <h2 className={`${shared.secTitle} ${styles.title}`}>
-              Más que diseño.<br />Arte con propósito.
+              Diseño con alma.<br />Marcas que se recuerdan.
             </h2>
             <div className={shared.secBar} />
             <p className={`${shared.secDesc} ${styles.desc}`}>
-              En Palette Studio creemos que la belleza es una declaración de
-              intenciones. Nos especializamos en estética femenina audaz y
-              contemporánea — marcas que tienen carácter, presencia y dejan
-              huella.
+              En Palette Studio creemos que cada marca tiene una historia única
+              que merece ser contada visualmente. Somos un estudio especializado
+              en identidad visual, branding y diseño de interfaces — con una
+              estética contemporánea, intencional y profundamente personal.
             </p>
             <p className={`${shared.secDesc} ${styles.desc}`} style={{ marginTop: "16px" }}>
-              Trabajamos con emprendedoras y empresas familiares que quieren
-              dejar de pasar desapercibidas y empezar a ser recordadas.
+              Trabajamos codo a codo con emprendedores y empresas que quieren
+              dejar de pasar desapercibidos y comenzar a construir una presencia
+              visual que inspire confianza, genere conexión y marque diferencia.
             </p>
           </div>
 

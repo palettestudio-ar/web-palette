@@ -1,69 +1,66 @@
 import styles from "./Services.module.css";
 import shared from "@/styles/shared.module.css";
+import { WHATSAPP_URL } from "@/lib/constants";
 
-const services = [
+const categories = [
   {
     num: "01",
-    name: "Identidad Visual Completa",
-    desc: "Una identidad visual coherente y memorable que comunica quién sos antes de que digas una sola palabra.",
+    name: "Branding",
+    desc: "Tu marca es mucho más que un logo. Construimos la estrategia completa — el concepto, el posicionamiento y la personalidad que te diferencian en el mercado y conectan con tu audiencia ideal.",
     items: [
-      "Diseño de logotipo profesional",
-      "Paleta de colores personalizada",
-      "Selección tipográfica",
+      "Estrategia y posicionamiento de marca",
+      "Naming y propuesta de valor",
+      "Tono de voz y personalidad",
       "Manual de marca completo",
-      "Archivos en todos los formatos",
     ],
-    badge: "El más completo",
     delay: "",
   },
   {
     num: "02",
-    name: "Diseño de Logotipo",
-    desc: "Tu símbolo de identidad. Un logotipo diseñado con intención que representa la esencia de tu marca.",
+    name: "Identidad Visual",
+    desc: "Diseñamos el sistema visual que hace que tu marca sea reconocible al instante. Cada elemento — forma, color, tipografía — elegido con intención para comunicar quién sos antes de decir una sola palabra.",
     items: [
-      "Concepto creativo exclusivo",
-      "Versiones positiva y negativa",
-      "Variantes de uso",
-      "Archivos SVG, PNG y PDF",
-      "Guía de uso básica",
+      "Diseño de logotipo profesional",
+      "Paleta de colores a medida",
+      "Sistema tipográfico editorial",
+      "Archivos en todos los formatos",
     ],
-    badge: "Ideal para empezar",
     delay: "d1",
   },
   {
     num: "03",
-    name: "Manual de Marca",
-    desc: "Las reglas de juego de tu marca. Todo lo que necesitás para mantener una imagen coherente en cada plataforma.",
+    name: "Diseño UI",
+    desc: "Interfaces que no solo se ven bien — generan confianza, retienen usuarios y convierten. Diseñamos experiencias digitales que reflejan tu marca y funcionan para tu negocio.",
     items: [
-      "Guía de colores y tipografía",
-      "Normas de uso del logo",
-      "Tono de voz y personalidad",
-      "Estilo fotográfico",
-      "Ejemplos de aplicación",
+      "Diseño de sitios web",
+      "Diseño de aplicaciones móviles",
+      "Sistemas de componentes UI",
+      "Prototipado interactivo",
     ],
-    badge: "Profesionaliza tu marca",
     delay: "d2",
   },
 ];
 
-export default function Services() {
+export default function Services({ hideHeader }: { hideHeader?: boolean } = {}) {
   return (
-    <section className={`${styles.services} ${shared.sec}`} id="servicios">
+    <section className={styles.services} id="servicios">
       <div className={shared.wrap}>
-        {/* Header */}
-        <div className={`${styles.header} reveal`}>
-          <span className={shared.secLabel}>Lo que hacemos</span>
-          <h2 className={shared.secTitle}>Nuestros servicios</h2>
-          <div className={shared.secBar} />
-          <p className={`${shared.secDesc} ${styles.headerDesc}`}>
-            Cada servicio está diseñado para darte la identidad visual que tu
-            marca necesita, sin importar en qué etapa estés.
-          </p>
-        </div>
+        {/* Header — oculto cuando la página ya tiene PageHero */}
+        {!hideHeader && (
+          <div className={`${styles.header} reveal`}>
+            <span className={styles.secLabel}>Lo que hacemos</span>
+            <h2 className={styles.secTitle}>Nuestros servicios</h2>
+            <div className={styles.secBar} />
+            <p className={styles.headerDesc}>
+              No trabajamos con plantillas. Cada proyecto parte de cero,<br />
+              construido a medida del estilo y la visión de cada cliente.
+            </p>
+          </div>
+        )}
 
-        {/* Cards */}
+        {/* Category grid */}
         <div className={styles.grid}>
-          {services.map((s) => (
+          {categories.map((s) => (
             <div
               key={s.num}
               className={`${styles.card} reveal${s.delay ? " " + s.delay : ""}`}
@@ -76,9 +73,18 @@ export default function Services() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <span className={styles.badge}>{s.badge}</span>
             </div>
           ))}
+        </div>
+
+        {/* Custom tagline */}
+        <div className={`${styles.adapt} reveal d3`}>
+          <p className={styles.adaptText}>
+            ¿Tenés algo en mente que no está acá?{" "}
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={styles.adaptLink}>
+              Contanos tu idea →
+            </a>
+          </p>
         </div>
       </div>
     </section>

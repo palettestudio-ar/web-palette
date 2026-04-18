@@ -5,22 +5,22 @@ const steps = [
   {
     num: "01",
     title: "Consulta inicial",
-    desc: "Nos conocemos, entendemos tu marca, tu público y lo que querés transmitir.",
+    desc: "Nos conocemos a fondo. Escuchamos tu visión, tu audiencia, tus valores y lo que querés que el mundo sienta al ver tu marca.",
   },
   {
     num: "02",
-    title: "Concepto creativo",
-    desc: "Desarrollamos la dirección visual que mejor representa la esencia de tu marca.",
+    title: "Dirección creativa",
+    desc: "Desarrollamos el concepto visual estratégico: el camino estético que mejor captura la esencia de tu marca y la diferencia del resto.",
   },
   {
     num: "03",
     title: "Diseño & refinado",
-    desc: "Creamos, presentamos y ajustamos hasta que el resultado sea perfecto.",
+    desc: "Creamos cada pieza con detalle. Presentamos, escuchamos tu feedback y ajustamos hasta que el resultado te represente al 100%.",
   },
   {
     num: "04",
-    title: "Entrega final",
-    desc: "Recibís todos los archivos listos para usar en cualquier plataforma o soporte.",
+    title: "Entrega & lanzamiento",
+    desc: "Recibís todos los archivos organizados y listos para usar — en cualquier plataforma, soporte o formato que necesites.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Process() {
         {/* Header */}
         <div className={`${styles.header} reveal`}>
           <span className={shared.secLabel}>Cómo trabajamos</span>
-          <h2 className={shared.secTitle}>El proceso</h2>
+          <h2 className={shared.secTitle}>Un proceso hecho para vos</h2>
           <div className={shared.secBar} />
         </div>
 

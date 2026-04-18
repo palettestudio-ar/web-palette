@@ -1,0 +1,71 @@
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+  position: relative;
+  background: var(--negro);
+  min-height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 44px 64px;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 70% 80% at 0% 100%,
+    rgba(var(--fucsia-rgb), 0.07) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+  margin-bottom: 16px;
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+
+.title {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 20px;
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 480px;
+  line-height: 1.8;
+  animation: fadeUp 0.8s ease 0.35s both;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 24px 48px;
+    min-height: 36vh;
+  }
+}
