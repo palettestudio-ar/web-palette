@@ -1,3 +1,8 @@
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--whatsapp-rgb), 0.45); }
+  60%       { box-shadow: 0 0 0 10px rgba(var(--whatsapp-rgb), 0); }
+}
+
 .contact {
   background: var(--negro);
   text-align: center;
@@ -12,17 +17,17 @@
 }
 
 .title {
-  color: #fff;
+  color: var(--blanco);
   margin-bottom: 20px;
 }
 
 .title em {
   font-style: italic;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(var(--blanco-rgb), 0.2);
 }
 
 .sub {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(var(--blanco-rgb), 0.45);
   max-width: 520px;
   margin: 0 auto 48px;
   text-align: center;
@@ -60,23 +65,24 @@
 
 /* WhatsApp */
 .btnWa {
-  background: #25D366;
-  color: #fff;
+  background: var(--whatsapp);
+  color: var(--blanco);
+  animation: waPulse 2.4s ease-in-out infinite;
 }
 
 .btnWa:hover {
-  background: #1da851;
+  background: var(--whatsapp-dark);
 }
 
 /* Instagram */
 .btnIg {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: #fff;
+  background: linear-gradient(135deg, var(--ig-1) 0%, var(--ig-2) 25%, var(--ig-3) 50%, var(--ig-4) 75%, var(--ig-5) 100%);
+  color: var(--blanco);
 }
 
 /* Email */
 .btnMl {
   background: transparent;
-  color: rgba(255, 255, 255, 0.85);
-  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: rgba(var(--blanco-rgb), 0.85);
+  border: 1.5px solid rgba(var(--blanco-rgb), 0.25);
 }

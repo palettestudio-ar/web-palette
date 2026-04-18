@@ -14,7 +14,7 @@ export default function About() {
       <div className={shared.wrap}>
         <div className={styles.grid}>
           {/* Left column */}
-          <div className="reveal">
+          <div className="reveal-left">
             <span className={shared.secLabel}>Quiénes somos</span>
             <h2 className={`${shared.secTitle} ${styles.title}`}>
               Más que diseño.<br />Arte con propósito.
@@ -33,7 +33,7 @@ export default function About() {
           </div>
 
           {/* Right column — stats */}
-          <div className={`${styles.statsGrid} reveal d2`}>
+          <div className={`${styles.statsGrid} reveal-right d2`}>
             {stats.map((s) => (
               <div key={s.label} className={styles.stat}>
                 <span className={styles.statN}>{s.num}</span>

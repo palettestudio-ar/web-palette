@@ -1,3 +1,8 @@
+@keyframes slideDown {
+  from { transform: translateY(-110%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -8,9 +13,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 18px 40px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(var(--blanco-rgb), 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  animation: slideDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 .navLogo {
@@ -23,6 +29,8 @@
 .navLogoImg {
   height: 42px;
   width: auto;
+  max-height: 42px;
+  object-fit: contain;
 }
 
 .navLogoText {
@@ -47,6 +55,22 @@
   color: var(--negro);
   text-decoration: none;
   transition: color 0.2s;
+  position: relative;
+}
+
+.navLinks a:not(.navCta)::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--fucsia);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:not(.navCta):hover::after {
+  width: 100%;
 }
 
 .navLinks a:hover {
@@ -59,14 +83,14 @@
   letter-spacing: 0.14em !important;
   text-transform: uppercase;
   background: var(--fucsia);
-  color: #fff !important;
+  color: var(--blanco) !important;
   padding: 10px 24px;
   transition: background 0.2s !important;
 }
 
 .navCta:hover {
-  background: #cc0066;
-  color: #fff !important;
+  background: var(--fucsia-dark);
+  color: var(--blanco) !important;
 }
 
 @media (max-width: 600px) {

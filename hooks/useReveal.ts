@@ -14,7 +14,7 @@ export function useReveal() {
       { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll(".reveal");
+    const elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();

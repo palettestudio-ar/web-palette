@@ -1,7 +1,13 @@
+@tailwind components;
+@tailwind utilities;
+
+
 /* =============================================
    RESET
    ============================================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,10 +17,34 @@
    CSS VARIABLES
    ============================================= */
 :root {
+  /* Paleta principal */
   --fucsia: #FF0080;
+  --fucsia-rgb: 255, 0, 128;
+  --fucsia-dark: #cc0066;
   --negro: #111111;
+  --negro-rgb: 17, 17, 17;
   --blanco: #FFFFFF;
+  --blanco-rgb: 255, 255, 255;
   --gris: #F7F5F7;
+
+  /* Texto */
+  --gris-texto: #555555;
+  --gris-claro: #777777;
+  --gris-suave: #888888;
+  --gris-medio: #bbbbbb;
+
+  /* Bordes */
+  --gris-borde: #eeeeee;
+
+  /* Redes sociales */
+  --whatsapp: #25D366;
+  --whatsapp-rgb: 37, 211, 102;
+  --whatsapp-dark: #1da851;
+  --ig-1: #f09433;
+  --ig-2: #e6683c;
+  --ig-3: #dc2743;
+  --ig-4: #cc2366;
+  --ig-5: #bc1888;
 }
 
 /* =============================================
@@ -47,9 +77,11 @@ img {
 ::-webkit-scrollbar {
   width: 3px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--fucsia);
 }
@@ -81,4 +113,79 @@ img {
 
 .reveal.d3 {
   transition-delay: 0.3s;
+}
+
+.reveal.d4 {
+  transition-delay: 0.4s;
+}
+
+.reveal.d5 {
+  transition-delay: 0.5s;
+}
+
+/* =============================================
+   REVEAL FROM LEFT
+   ============================================= */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-36px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =============================================
+   REVEAL FROM RIGHT
+   ============================================= */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(36px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =============================================
+   REVEAL SCALE
+   ============================================= */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Delays compartidos para todas las variantes */
+.reveal-left.d1,
+.reveal-right.d1,
+.reveal-scale.d1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-left.d2,
+.reveal-right.d2,
+.reveal-scale.d2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-left.d3,
+.reveal-right.d3,
+.reveal-scale.d3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-left.d4,
+.reveal-right.d4,
+.reveal-scale.d4 {
+  transition-delay: 0.4s;
 }

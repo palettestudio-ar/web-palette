@@ -25,7 +25,7 @@
 .copy {
   font-size: 10px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(var(--blanco-rgb), 0.25);
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }

@@ -36,9 +36,12 @@ export default function Process() {
         </div>
 
         {/* Steps */}
-        <div className={`${styles.grid} reveal d1`}>
-          {steps.map((s) => (
-            <div key={s.num} className={styles.step}>
+        <div className={styles.grid}>
+          {steps.map((s, i) => (
+            <div
+              key={s.num}
+              className={`${styles.step} reveal-scale d${i + 1}`}
+            >
               <span className={styles.num}>{s.num}</span>
               <h3 className={styles.title}>{s.title}</h3>
               <p className={styles.desc}>{s.desc}</p>

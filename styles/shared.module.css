@@ -35,7 +35,7 @@
 .secDesc {
   font-size: 14px;
   font-weight: 300;
-  color: #555;
+  color: var(--gris-texto);
   line-height: 1.9;
 }
 
@@ -45,7 +45,7 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   background: var(--fucsia);
-  color: #fff;
+  color: var(--blanco);
   padding: 14px 32px;
   text-decoration: none;
   transition: background 0.2s, transform 0.2s;
@@ -55,7 +55,7 @@
 }
 
 .btnF:hover {
-  background: #cc0066;
+  background: var(--fucsia-dark);
   transform: translateY(-2px);
 }
 
@@ -76,6 +76,6 @@
 
 .btnO:hover {
   background: var(--negro);
-  color: #fff;
+  color: var(--blanco);
   transform: translateY(-2px);
 }
