@@ -5,4 +5,4 @@ export const WHATSAPP_URL_SHORT =
 export const INSTAGRAM_URL = "https://instagram.com/palettestudio.ar";
 export const EMAIL = "palette2606@gmail.com";
 export const SITE_NAME = "Palette Studio";
-export const SITE_DESCRIPTION = "Identidad Visual & Branding";
+export const SITE_DESCRIPTION = "Branding & Diseño UI";

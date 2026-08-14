@@ -10,7 +10,6 @@ import { WHATSAPP_URL, INSTAGRAM_URL } from "@/lib/constants";
 const menuItems = [
   { label: "Inicio", href: "/" },
   { label: "Servicios", href: "/servicios" },
-  { label: "Portfolio", href: "/portfolio" },
   { label: "Contacto", href: "/contacto" },
 ];
 

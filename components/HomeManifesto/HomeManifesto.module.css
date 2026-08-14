@@ -1,0 +1,120 @@
+.section {
+  background: var(--blanco);
+  padding: 100px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1020px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+  margin-bottom: 24px;
+}
+
+.statement {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--negro);
+  margin-bottom: 24px;
+}
+
+.statement em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--fucsia);
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gris-texto);
+  line-height: 1.9;
+  margin-bottom: 32px;
+  max-width: 440px;
+}
+
+.link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--negro);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--fucsia);
+  padding-bottom: 4px;
+  display: inline-block;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.link:hover {
+  color: var(--fucsia);
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 1px solid var(--gris-borde);
+  padding-left: 64px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statNum {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--negro);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 80px 24px;
+  }
+
+  .stats {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--gris-borde);
+    padding-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .stat {
+    flex: 1;
+    min-width: 100px;
+  }
+}

@@ -17,7 +17,7 @@ export default function Contact({ fullPage }: { fullPage?: boolean } = {}) {
           <p className={`${shared.secDesc} ${styles.sub}`}>
             Ya sea que tengas una idea clara o estés arrancando desde cero,
             estamos para escucharte. Contanos tu proyecto y construyamos juntos
-            la identidad visual que tu marca se merece.
+            la marca que tu negocio se merece.
           </p>
 
           <div className={styles.btns}>

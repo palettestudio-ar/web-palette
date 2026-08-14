@@ -12,7 +12,7 @@ export default function ServiciosPage() {
       <PageHero
         label="Lo que hacemos"
         title="Servicios"
-        sub="Tres disciplinas. Un mismo objetivo: que tu marca comunique exactamente lo que es."
+        sub="Dos disciplinas. Un mismo objetivo: que tu marca comunique exactamente lo que es."
       />
       <Services hideHeader />
     </>

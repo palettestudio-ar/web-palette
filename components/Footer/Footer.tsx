@@ -7,7 +7,7 @@ export default function Footer() {
       <img src="/logo/logo.svg" alt="Palette Studio" className={styles.logo} />
       <p className={styles.script}>Palette Studio</p>
       <p className={styles.copy}>
-        © 2026 Palette Studio · Identidad Visual, Branding &amp; Diseño UI
+        © 2026 Palette Studio · Branding &amp; Diseño UI
       </p>
     </footer>
   );

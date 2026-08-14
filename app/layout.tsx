@@ -28,9 +28,9 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Palette Studio — Identidad Visual & Branding",
+  title: "Palette Studio — Branding & Diseño UI",
   description:
-    "Transformamos la esencia de emprendedores y empresas familiares en identidades visuales que el mundo no puede ignorar.",
+    "Transformamos la esencia de emprendedores y empresas familiares en marcas que el mundo no puede ignorar.",
   icons: {
     icon: "/logo/logo.svg",
   },

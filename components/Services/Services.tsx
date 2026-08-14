@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Services.module.css";
 import shared from "@/styles/shared.module.css";
 import { WHATSAPP_URL } from "@/lib/constants";
@@ -6,6 +7,7 @@ const categories = [
   {
     num: "01",
     name: "Branding",
+    href: "/servicios/branding",
     desc: "Tu marca es mucho más que un logo. Construimos la estrategia completa — el concepto, el posicionamiento y la personalidad que te diferencian en el mercado y conectan con tu audiencia ideal.",
     items: [
       "Estrategia y posicionamiento de marca",
@@ -17,19 +19,8 @@ const categories = [
   },
   {
     num: "02",
-    name: "Identidad Visual",
-    desc: "Diseñamos el sistema visual que hace que tu marca sea reconocible al instante. Cada elemento — forma, color, tipografía — elegido con intención para comunicar quién sos antes de decir una sola palabra.",
-    items: [
-      "Diseño de logotipo profesional",
-      "Paleta de colores a medida",
-      "Sistema tipográfico editorial",
-      "Archivos en todos los formatos",
-    ],
-    delay: "d1",
-  },
-  {
-    num: "03",
     name: "Diseño UI",
+    href: "/servicios/diseno-ui",
     desc: "Interfaces que no solo se ven bien — generan confianza, retienen usuarios y convierten. Diseñamos experiencias digitales que reflejan tu marca y funcionan para tu negocio.",
     items: [
       "Diseño de sitios web",
@@ -37,7 +28,7 @@ const categories = [
       "Sistemas de componentes UI",
       "Prototipado interactivo",
     ],
-    delay: "d2",
+    delay: "d1",
   },
 ];
 
@@ -61,8 +52,9 @@ export default function Services({ hideHeader }: { hideHeader?: boolean } = {}) 
         {/* Category grid */}
         <div className={styles.grid}>
           {categories.map((s) => (
-            <div
+            <Link
               key={s.num}
+              href={s.href}
               className={`${styles.card} reveal${s.delay ? " " + s.delay : ""}`}
             >
               <span className={styles.num}>{s.num}</span>
@@ -73,7 +65,8 @@ export default function Services({ hideHeader }: { hideHeader?: boolean } = {}) 
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-            </div>
+              <span className={styles.cardArrow}>Ver más →</span>
+            </Link>
           ))}
         </div>
 

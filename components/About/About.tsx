@@ -17,19 +17,19 @@ export default function About() {
           <div className="reveal-left">
             <span className={shared.secLabel}>Quiénes somos</span>
             <h2 className={`${shared.secTitle} ${styles.title}`}>
-              Diseño con alma.<br />Marcas que se recuerdan.
+              No somos un estudio<br />convencional.
             </h2>
             <div className={shared.secBar} />
             <p className={`${shared.secDesc} ${styles.desc}`}>
-              En Palette Studio creemos que cada marca tiene una historia única
-              que merece ser contada visualmente. Somos un estudio especializado
-              en identidad visual, branding y diseño de interfaces — con una
-              estética contemporánea, intencional y profundamente personal.
+              Palette nació para trabajar con emprendedores y empresas que
+              quieren salir de su zona de confort. No replicamos tendencias ni
+              usamos fórmulas genéricas — diseñamos identidades que se atreven
+              a ser distintas y que destacan donde más importa: el mundo digital.
             </p>
             <p className={`${shared.secDesc} ${styles.desc}`} style={{ marginTop: "16px" }}>
-              Trabajamos codo a codo con emprendedores y empresas que quieren
-              dejar de pasar desapercibidos y comenzar a construir una presencia
-              visual que inspire confianza, genere conexión y marque diferencia.
+              Si tu marca está lista para dejar de pasar desapercibida y
+              empezar a ocupar el lugar que se merece, estamos para hacerlo
+              realidad.
             </p>
           </div>
 
