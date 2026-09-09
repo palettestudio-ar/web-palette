@@ -33,7 +33,7 @@ export default function HomeManifesto() {
           <span className={styles.statLabel}>Proyectos a medida</span>
         </div>
         <div className={styles.stat}>
-          <span className={styles.statNum}>3</span>
+          <span className={styles.statNum}>2</span>
           <span className={styles.statLabel}>Disciplinas de diseño</span>
         </div>
       </div>

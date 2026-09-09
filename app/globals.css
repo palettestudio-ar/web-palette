@@ -35,6 +35,11 @@
 
   /* Bordes */
   --gris-borde: #eeeeee;
+  --surface-dark: #151214;
+  --surface-soft: #fbf8fa;
+  --shadow-soft: 0 24px 70px rgba(17, 17, 17, 0.08);
+  --radius-sm: 14px;
+  --radius-md: 24px;
 
   /* Redes sociales */
   --whatsapp: #25D366;
@@ -63,6 +68,16 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background: var(--fucsia);
+  color: var(--blanco);
+}
+
+:focus-visible {
+  outline: 3px solid var(--fucsia);
+  outline-offset: 4px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -70,6 +85,11 @@ a {
 
 img {
   display: block;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* =============================================
@@ -164,6 +184,23 @@ img {
 .reveal-scale.visible {
   opacity: 1;
   transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Delays compartidos para todas las variantes */

@@ -1,10 +1,10 @@
 .section {
-  background: var(--blanco);
-  padding: 100px 24px;
+  background: var(--surface-soft);
+  padding: 132px 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  max-width: 1020px;
+  max-width: 1180px;
   margin: 0 auto;
   align-items: center;
 }
@@ -26,7 +26,7 @@
 
 .statement {
   font-family: var(--font-playfair), 'Playfair Display', serif;
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: clamp(38px, 5vw, 64px);
   font-weight: 700;
   line-height: 1.1;
   color: var(--negro);
@@ -40,7 +40,7 @@
 }
 
 .body {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   color: var(--gris-texto);
   line-height: 1.9;
@@ -69,15 +69,20 @@
 .stats {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  border-left: 1px solid var(--gris-borde);
-  padding-left: 64px;
+  gap: 12px;
+  border-left: 0;
+  padding-left: 24px;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  padding: 24px 28px;
+  background: var(--blanco);
+  border: 1px solid rgba(17,17,17,.06);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 40px rgba(17,17,17,.04);
 }
 
 .statNum {

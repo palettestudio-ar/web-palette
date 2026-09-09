@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
+import { Playfair_Display, Montserrat, Great_Vibes, Cormorant_Garamond } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import FloatingButtons from "@/components/FloatingButtons/FloatingButtons";
@@ -27,6 +27,13 @@ const greatVibes = Great_Vibes({
   display: "swap",
 });
 
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Palette Studio — Branding & Diseño UI",
   description:
@@ -44,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${playfair.variable} ${montserrat.variable} ${greatVibes.variable}`}
+      className={`${playfair.variable} ${montserrat.variable} ${greatVibes.variable} ${cormorant.variable}`}
     >
       <body>
         <Navbar />

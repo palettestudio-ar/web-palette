@@ -9,6 +9,7 @@ import { WHATSAPP_URL, INSTAGRAM_URL } from "@/lib/constants";
 
 const menuItems = [
   { label: "Inicio", href: "/" },
+  { label: "Proyectos", href: "/#proyectos" },
   { label: "Servicios", href: "/servicios" },
   { label: "Contacto", href: "/contacto" },
 ];
@@ -42,6 +43,19 @@ export default function Navbar() {
           <img src="/logo/logo.svg" alt="Palette" className={styles.logoImg} />
           <span className={styles.logoText}>PALETTE</span>
         </Link>
+
+        <div className={styles.desktopNav} aria-label="Navegación principal">
+          {menuItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={pathname === item.href ? "page" : undefined}
+              className={`${styles.desktopLink} ${pathname === item.href ? styles.desktopLinkActive : ""}`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
 
         <button
           className={styles.burger}
@@ -87,6 +101,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
+                    onClick={() => setOpen(false)}
                     className={`${styles.menuItem} ${pathname === item.href ? styles.menuItemActive : ""}`}
                   >
                     <span className={styles.menuNum}>0{i + 1}</span>

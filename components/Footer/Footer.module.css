@@ -31,3 +31,9 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+
+@media (max-width: 600px) {
+  .footer {
+    padding-bottom: 150px;
+  }
+}

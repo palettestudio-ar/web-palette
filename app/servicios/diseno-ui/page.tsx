@@ -32,7 +32,7 @@ export default function DisenoUIPage() {
   return (
     <main>
       <PageHero
-        label="Servicio 03"
+        label="Servicio 02"
         title="Diseño UI"
         sub="Interfaces digitales que no solo se ven bien — generan confianza y convierten."
       />

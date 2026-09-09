@@ -4,7 +4,9 @@
 }
 
 .contact {
-  background: var(--negro);
+  background:
+    radial-gradient(circle at 50% 100%, rgba(var(--fucsia-rgb), .16), transparent 42%),
+    var(--negro);
   text-align: center;
 }
 
@@ -60,7 +62,9 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  min-height: 48px;
   padding: 14px 28px;
+  border-radius: 999px;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.2s;
 }
@@ -74,9 +78,8 @@
 
 /* WhatsApp */
 .btnWa {
-  background: var(--whatsapp);
+  background: #147a3b;
   color: var(--blanco);
-  animation: waPulse 2.4s ease-in-out infinite;
 }
 
 .btnWa:hover {
