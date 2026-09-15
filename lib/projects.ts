@@ -39,4 +39,12 @@ export const projects: Project[] = [
     href: "https://palettestudio-ar.github.io/inplant-website/",
     wordmarkImage: "/proyectos/inplant-logo-white.png",
   },
+  {
+    title: "Alto Antojo",
+    category: "Branding · Identidad Visual",
+    year: "2026",
+    image: "/proyectos/alto-antojo.webp",
+    imageAlt: "Empaque de hamburguesa con la identidad ilustrada de Alto Antojo",
+    href: "https://www.instagram.com/palettestudio.ar/",
+  },
 ];
