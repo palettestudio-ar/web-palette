@@ -1,20 +1,12 @@
-"use client";
+import type { Metadata } from "next";
+import ServiciosPageClient from "./ServiciosPageClient";
 
-import { useReveal } from "@/hooks/useReveal";
-import PageHero from "@/components/PageHero/PageHero";
-import Services from "@/components/Services/Services";
+export const metadata: Metadata = {
+  title: "Servicios",
+  description:
+    "Branding y Diseño UI: dos disciplinas, un mismo objetivo — que tu marca comunique exactamente lo que es.",
+};
 
 export default function ServiciosPage() {
-  useReveal();
-
-  return (
-    <>
-      <PageHero
-        label="Lo que hacemos"
-        title="Servicios"
-        sub="Dos disciplinas. Un mismo objetivo: que tu marca comunique exactamente lo que es."
-      />
-      <Services hideHeader />
-    </>
-  );
+  return <ServiciosPageClient />;
 }

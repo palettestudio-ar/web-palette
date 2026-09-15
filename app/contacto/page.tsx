@@ -1,9 +1,12 @@
-"use client";
+import type { Metadata } from "next";
+import ContactoPageClient from "./ContactoPageClient";
 
-import { useReveal } from "@/hooks/useReveal";
-import Contact from "@/components/Contact/Contact";
+export const metadata: Metadata = {
+  title: "Contacto",
+  description:
+    "Contanos tu proyecto por WhatsApp, Instagram o email — Palette Studio, branding y diseño UI.",
+};
 
 export default function ContactoPage() {
-  useReveal();
-  return <Contact fullPage />;
+  return <ContactoPageClient />;
 }

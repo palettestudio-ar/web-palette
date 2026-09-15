@@ -6,3 +6,5 @@ export const INSTAGRAM_URL = "https://instagram.com/palettestudio.ar";
 export const EMAIL = "palette2606@gmail.com";
 export const SITE_NAME = "Palette Studio";
 export const SITE_DESCRIPTION = "Branding & Diseño UI";
+// Actualizar cuando el dominio propio (palettestudio.ar) esté configurado.
+export const SITE_URL = "https://palette-studio-web-orpin.vercel.app";

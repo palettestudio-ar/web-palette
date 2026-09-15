@@ -4,6 +4,7 @@ import { Playfair_Display, Montserrat, Great_Vibes, Cormorant_Garamond } from "n
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import FloatingButtons from "@/components/FloatingButtons/FloatingButtons";
+import { SITE_URL } from "@/lib/constants";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -34,12 +35,34 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+const title = "Palette Studio — Branding & Diseño UI";
+const description =
+  "Transformamos la esencia de emprendedores y empresas familiares en marcas que el mundo no puede ignorar.";
+
 export const metadata: Metadata = {
-  title: "Palette Studio — Branding & Diseño UI",
-  description:
-    "Transformamos la esencia de emprendedores y empresas familiares en marcas que el mundo no puede ignorar.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: title,
+    template: "%s — Palette Studio",
+  },
+  description,
   icons: {
     icon: "/logo/logo.svg",
+  },
+  openGraph: {
+    title,
+    description,
+    url: SITE_URL,
+    siteName: "Palette Studio",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Palette Studio" }],
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image.png"],
   },
 };
 
