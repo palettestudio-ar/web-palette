@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 44px;
+  padding: 28px 44px;
   border-bottom: 1px solid transparent;
   transition: background 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
 }
@@ -30,14 +30,14 @@
 }
 
 .logoImg {
-  height: 34px;
+  height: 42px;
   width: auto;
   filter: brightness(0) invert(1);
 }
 
 .logoText {
   font-family: var(--font-playfair), 'Playfair Display', serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.28em;
   color: #ffffff;
@@ -49,14 +49,14 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 44px;
 }
 
 .desktopLink {
   position: relative;
   padding: 12px 0;
-  color: rgba(255,255,255,.62);
-  font-size: 10px;
+  color: rgba(255,255,255,.72);
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -69,7 +69,7 @@
   left: 0;
   right: .2em;
   bottom: 5px;
-  height: 1px;
+  height: 2px;
   background: var(--fucsia);
   transform: scaleX(0);
   transform-origin: right;
@@ -99,7 +99,7 @@
 
 .burgerLine {
   display: block;
-  width: 28px;
+  width: 32px;
   height: 1.5px;
   background: #ffffff;
   transform-origin: center;
@@ -190,7 +190,7 @@
   color: var(--fucsia);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .desktopNav { display: none; }
   .nav {
     padding: 18px 24px;
