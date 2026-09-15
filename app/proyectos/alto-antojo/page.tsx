@@ -16,7 +16,7 @@ export default function AltoAntojoPage() {
       <section className={styles.hero}>
         <div
           className={styles.heroBg}
-          style={{ backgroundImage: "url(/proyectos/alto-antojo.webp)" }}
+          style={{ backgroundImage: "url(/proyectos/alto-antojo-hero.webp)" }}
         />
         <div className={styles.heroOverlay} />
 

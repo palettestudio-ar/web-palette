@@ -44,7 +44,7 @@ export const projects: Project[] = [
     category: "Branding · Identidad Visual",
     year: "2026",
     image: "/proyectos/alto-antojo.webp",
-    imageAlt: "Empaque de hamburguesa con la identidad ilustrada de Alto Antojo",
+    imageAlt: "Logotipo ilustrado de Alto Antojo",
     href: "/proyectos/alto-antojo",
   },
 ];
