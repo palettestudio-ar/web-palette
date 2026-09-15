@@ -1,0 +1,232 @@
+.hero {
+  position: relative;
+  height: 78dvh;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: var(--negro);
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0a0a;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 0.97) 0%,
+    rgba(17, 17, 17, 0.55) 45%,
+    rgba(17, 17, 17, 0.15) 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 44px 56px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin-bottom: 28px;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--fucsia);
+}
+
+.heroLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+  margin-bottom: 18px;
+}
+
+.heroTitle {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(48px, 7vw, 92px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+.heroSub {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+/* ---- INFO ---- */
+.info {
+  padding: 56px 24px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+  background: var(--blanco);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoLabel {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fucsia);
+}
+
+.infoValue {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--negro);
+  line-height: 1.5;
+}
+
+/* ---- STORY ---- */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+}
+
+.storyList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.storyList li {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gris-texto);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.storyList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--fucsia);
+}
+
+/* ---- GALLERY ---- */
+.gallery {
+  padding: 4px 0 8px;
+  background: var(--blanco);
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 4px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.galleryCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.galleryImg {
+  background-size: cover;
+  background-position: center;
+  background-color: #f1ede8;
+  min-height: 220px;
+  border-radius: 4px;
+}
+
+.galleryImgLarge {
+  min-height: 452px;
+}
+
+/* ---- NEXT ---- */
+.next {
+  background: var(--negro);
+  padding: 48px 44px;
+  text-align: right;
+}
+
+.nextLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nextLabel {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 6px;
+}
+
+.nextTitle {
+  display: block;
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.25s;
+}
+
+.nextLink:hover .nextTitle {
+  color: var(--fucsia);
+}
+
+@media (max-width: 900px) {
+  .heroContent { padding: 0 24px 44px; }
+  .info { padding: 40px 24px; }
+  .infoGrid { grid-template-columns: 1fr 1fr; }
+  .storyGrid { grid-template-columns: 1fr; gap: 36px; }
+  .galleryGrid { grid-template-columns: 1fr; }
+  .galleryImgLarge { min-height: 320px; }
+  .galleryImg { min-height: 260px; }
+  .next { padding: 36px 24px; text-align: left; }
+}

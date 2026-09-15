@@ -45,6 +45,6 @@ export const projects: Project[] = [
     year: "2026",
     image: "/proyectos/alto-antojo.webp",
     imageAlt: "Empaque de hamburguesa con la identidad ilustrada de Alto Antojo",
-    href: "https://www.instagram.com/palettestudio.ar/",
+    href: "/proyectos/alto-antojo",
   },
 ];
