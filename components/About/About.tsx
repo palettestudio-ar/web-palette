@@ -3,7 +3,7 @@ import shared from "@/styles/shared.module.css";
 
 const stats = [
   { num: "100%", label: "Proyectos personalizados" },
-  { num: "+50", label: "Marcas transformadas" },
+  { num: "1:1", label: "Atención personalizada" },
   { num: "2", label: "Disciplinas de diseño" },
   { num: "∞", label: "Ideas sin límite" },
 ];

@@ -25,8 +25,8 @@ export default function HomeManifesto() {
 
       <div className={styles.stats}>
         <div className={styles.stat}>
-          <span className={styles.statNum}>+50</span>
-          <span className={styles.statLabel}>Marcas transformadas</span>
+          <span className={styles.statNum}>1:1</span>
+          <span className={styles.statLabel}>Atención personalizada</span>
         </div>
         <div className={styles.stat}>
           <span className={styles.statNum}>100%</span>

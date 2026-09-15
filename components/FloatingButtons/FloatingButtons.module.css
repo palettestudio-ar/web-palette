@@ -30,7 +30,6 @@
     right: 14px;
     bottom: max(14px, env(safe-area-inset-bottom));
     gap: 8px;
-    flex-direction: row;
   }
   .btn {
     width: 44px;
