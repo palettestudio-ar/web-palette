@@ -93,16 +93,10 @@ export default function AltoAntojoPage() {
             className={`${styles.galleryImg} ${styles.galleryImgLarge}`}
             style={{ backgroundImage: "url(/proyectos/alto-antojo-2.webp)" }}
           />
-          <div className={styles.galleryCol}>
-            <div
-              className={styles.galleryImg}
-              style={{ backgroundImage: "url(/proyectos/alto-antojo-3.webp)" }}
-            />
-            <div
-              className={styles.galleryImg}
-              style={{ backgroundImage: "url(/proyectos/alto-antojo-4.webp)" }}
-            />
-          </div>
+          <div
+            className={`${styles.galleryImg} ${styles.galleryImgLarge}`}
+            style={{ backgroundImage: "url(/proyectos/alto-antojo-3.webp)" }}
+          />
         </div>
       </section>
 

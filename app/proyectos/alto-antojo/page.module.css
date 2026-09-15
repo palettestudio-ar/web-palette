@@ -168,12 +168,6 @@
   padding: 0 4px;
 }
 
-.galleryCol {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .galleryImg {
   background-size: cover;
   background-position: center;
