@@ -43,7 +43,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/logo/logo.svg" alt="Palette Studio" className={styles.logo} />
 
-        <p className={styles.eyebrow}><span /> Estudio de Branding &amp; Diseño UI <span /></p>
+        <p className={styles.eyebrow}><span /> Branding &amp; Diseño UI <span /></p>
 
         <h1 className={styles.title}>
           Tu marca,<br />
