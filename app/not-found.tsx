@@ -1,6 +1,10 @@
 import Link from "next/link";
 import styles from "./not-found.module.css";
 
+export const metadata = {
+  title: "Página no encontrada",
+};
+
 export default function NotFound() {
   return (
     <section className={styles.hero}>
